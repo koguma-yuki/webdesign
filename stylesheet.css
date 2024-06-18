@@ -1,0 +1,344 @@
+@charset "UTF-8";
+
+/*共通部分
+----------------------------------------------*/
+html{
+    font-size: 100%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+body{
+    font-family: "Courgette","courgette","ズッキーニ","Yu Gothic Medium","游ゴシック Medium","YuGothic","游ゴシック体",
+    "ヒラギノ角ゴ Pro W3",sans-serif;
+    line-height: 1.7;
+}
+
+.main-nav{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none; 
+    padding-left: 0;
+}
+
+.main-nav li{
+    margin-left: 36px;
+    display: inline;
+}
+.main-nav a{
+    color: #432;
+}
+.main-nav a:hover{
+    color: palegoldenrod;
+}
+
+.page-header{
+    display: flex;
+    justify-content: right;  
+    
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+ul{
+    text-align:right;
+}
+/*HOME
+----------------------------------*/
+.home-content{
+    text-align: center;
+    margin-top: 10%;
+}
+
+/*見出し
+----------------------------------------------*/
+.page-title{
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-family: "Courgette","courgette","ズッキーニ";
+    font-weight: normal;
+    color: #432;
+}
+
+/*大きな画像*/
+.big-bg{
+    background-size: cover;
+    background-position: center top;
+}
+#home{
+    background-image: url(../images/flower_bg.jpg);
+    min-height: 100vh;
+}
+    
+#home .page-title{
+    text-transform: none;
+}
+
+/*About
+----------------------------------*/
+#about{
+    background-image: url(../images/menu_bg.jpg);
+    min-height: 100vh;
+}
+
+#about .page-header{
+    margin-bottom: 150px;
+}
+
+.body{
+    color:#333 ;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#main.about-content h2{
+    font-size: 4rem;
+    text-align: left;
+    margin:0 0 30px 0;
+}
+
+.txtbox{
+    margin-bottom: 70px;
+    font-family: "Yu Gothic","YuGothic","游ゴシック体","游ゴシック";
+}
+.pfbox .imgpf{
+    float: left;
+    text-align: left;
+    margin-top: 0;
+}
+
+.imgpf{
+    margin-bottom: 20px;
+}
+
+#main .contbox{
+    height: 70%;
+}
+.myprof dt{
+    float: left;
+    display: block;
+    width: 20%;
+    font-weight: bold;
+    font-family: "Yu Gothic","YuGothic","游ゴシック体","游ゴシック";
+    margin-left: 50px;
+}
+
+.myprof dd{
+    float: right;
+    width: 50%;
+    font-family: "Yu Gothic","YuGothic","游ゴシック体","游ゴシック";
+}
+
+/*Works
+---------------------------------------------*/
+#works{
+    background-image: url(../images/menu_bg.jpg);
+    min-height: 100vh;
+}
+#main.works-content h2{
+    font-size: 4rem;
+    text-align: left;
+    margin:0 0 30px 0;
+}
+#works .page-header{
+    margin-bottom: 150px;
+}
+.grid{
+    display: grid;
+    gap:26px ;
+    grid-template-columns:repeat(2, minmax(240px,1fr));
+    margin-top: 6%;
+}
+.item p{
+    font-family: "Yu Gothic","YuGothic","游ゴシック体","游ゴシック";
+}
+
+/*Contact
+----------------------------------------------*/
+#contact{
+    background-image: url(../images/menu_bg.jpg);
+    min-height: 100vh;
+}    
+#main.contact-content h2{
+    font-size: 4rem;
+    text-align: left;
+    margin:0 0 30px 0;
+}
+#contact .page-header{
+    margin-bottom: 150px;
+}
+.contact-content p{
+    font-size: 1.125rem;
+}
+/*フォーム*/
+form div{
+    margin-bottom: 14px;
+}
+label{
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"]
+input[type="email"]
+textarea{
+    background: rgba(255, 255, 255, 5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"]
+input[type="email"]{
+    width: 100%;
+    max-width: 240px;
+}
+textarea{
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+input[type="submit"]{
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 1.2rem;
+    background:#f4b3c2;
+    border-radius: 5px;
+    padding: 18px 32px;
+}    
+.button:hover{
+    background:#f593aa;
+}
+
+/*フッター
+----------------------------------------------*/
+footer{
+    background-color: #fff;
+    font-family: "Yu Gothic","YUGothic","游ゴシック","游ゴシック体";
+    text-align: center;
+    padding: 20px 0;
+}
+footer p{
+    color: #333;
+    font-size: 0.875rem;
+}
+
+/*モバイル版
+----------------------------------------------*/
+@media screen and (max-width:600px){
+    .page-title {
+        font-size: 3.2rem;
+
+    }
+    
+    /*HEADER*/
+    .page-header{
+        justify-content: center;
+    }
+    .ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-nav{
+        font-size: 1rem;
+        margin-top: 80px;
+        margin-bottom: 180px;
+        padding-left: 0px;
+
+    }
+    .main-nav li {
+        margin: 0 10px;
+
+    }
+    /*HOME*/
+    .home-content{
+        margin-top: 20%;
+        text-align: center;
+    }
+    #home{
+        background-size: 230% 100%;
+        background-position: right center;
+    }
+
+    /*About*/
+    #main.about-content h2{
+        margin: initial;
+    }
+    #about .page-header{
+        margin-bottom: 50px;
+    }
+    #about .main-nav{
+        margin-bottom: 0;
+    }
+    .txtbox{
+        font-size: 1rem;
+    }
+    .pfbox .imgpf{
+        float: initial;
+         text-align: center;
+    }
+    .imgpf{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .myprof dt{
+        font-size: 1rem;
+        margin-left: 5%;
+    }
+    .myprof dd{
+        font-size: 1rem;
+        margin-left: 0;
+        margin-right: 23%;
+    }
+    /*Works*/
+    #works .main-nav{
+        margin-bottom: 50px;
+    }
+    #works .page-header {
+        margin-bottom: 0px;
+    }    
+    #works {
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
+    #works .wrapper{
+        grid-column: auto;
+        grid-row: auto;
+    }
+    #works .wrapper img{
+        height: auto;
+        width: 316px;
+    }
+    .grid{
+        grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
+    }
+    /*Contact*/
+    #contact .page-header {
+        margin-bottom: 0px;
+    }
+    #contact .main-nav{
+        margin-bottom: 50px;
+    }
+    .contact-content p{
+        font-size: 15px;
+        text-align: center;
+    }
+    #main.contact-content h2 {
+        margin-bottom: 35px;
+    }
+    /*フォーム*/
+    input[type="text"],
+    input[type="email"],
+    textarea{
+        max-width: 100%;
+    }
+}
